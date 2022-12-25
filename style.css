@@ -1,0 +1,526 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
+    font-size: large;
+}
+
+nav li {
+    list-style: none;
+    padding-top: 15px;
+    padding-right: 13px;
+}
+
+nav ul {
+    background-color: #6b9080;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-stranica {
+    overflow-x: hidden;
+}
+
+
+.naslovna {
+    background: url('naslovna.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 500px;
+    background-size: cover;
+    position: relative;
+}
+
+.tekst_slike {
+    position: absolute;
+    color: white;
+    top: 170px;
+    left: 265px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tekst_slike .naslov {
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.tekst_slike .podnaslov {
+    font-size: 30px;
+    margin-bottom: 17px;
+    text-align: center;
+}
+
+button {
+    color: white;
+    background-color: #6b9080;
+    width: 120px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+}
+
+.ponude {
+    display: flex;
+    justify-content: center;
+}
+
+.ponude img {
+    height: 470px;
+    width: 400px;
+    margin: 30px;
+    border-radius: 3%;
+}
+
+#biljke,
+#vencanja,
+#godisnjice {
+    position: relative;
+}
+
+.biljke-img {
+    display: block;
+    width: 100%;
+}
+
+.hover-biljke,
+.hover-vencanja,
+.hover-godisnjice {
+    position: absolute;
+    bottom: 36px;
+    left: 30px;
+    height: 470px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3%;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.hover-biljke:hover,
+.hover-vencanja:hover,
+.hover-godisnjice:hover {
+    opacity: 1;
+}
+
+
+.usluge {
+    background-color: #6b9080;
+    height: 500px;
+    width: auto;
+    color: white;
+    align-items: center;
+    display: flex;
+}
+
+.usluge img {
+    width: 350px;
+    height: 350px;
+    margin-right: 75px;
+    border-radius: 5%;
+}
+
+.text-usluge {
+    text-align: center;
+    padding: 0 90px;
+}
+
+.text-usluge h1 {
+    padding-bottom: 20px;
+}
+
+.nas-tim h1 {
+    margin: 20px 0;
+    text-align: center;
+    color: #6b9080;
+}
+
+.clanovi {
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid #6b9080;
+    padding: 15px 0;
+}
+
+.clanovi img {
+    margin: 0 15px;
+    width: 600px;
+    height: 500px;
+    border-radius: 3%;
+}
+
+footer {
+    background-color: #6b9080;
+    color: white;
+    display: flex;
+    padding: 20px 50px;
+    justify-content: space-around;
+    text-align: justify;
+    font-weight: 600;
+    flex-wrap: wrap;
+}
+
+aside {
+    background-color: #6b9080;
+    color: white;
+    padding: 15px 30px;
+    width: 200px;
+    margin-top: 16px;
+}
+
+.telefon img,
+.mejl img {
+    height: 23px;
+    width: 23px;
+    padding-right: 15px;
+}
+
+.telefon,
+.mejl {
+    display: flex;
+    padding-top: 13px;
+    align-items: center;
+}
+
+#adresa,
+#radno-vreme {
+    padding-top: 13px;
+    align-items: center;
+}
+
+#adresa h2,
+#radno-vreme p {
+    padding-bottom: 10px;
+}
+
+
+.shop-stranice {
+    font-size: 30px;
+    justify-content: center;
+    padding: 50px 150px;
+    color: #5a7b6d;
+}
+
+.kategorije {
+    float: left;
+}
+
+.kategorije p:first-of-type {
+    font-size: 37px;
+    border-bottom: 3px dotted #6b9080;
+    padding-bottom: 7px;
+}
+
+.kategorije a {
+    color: #5a7b6d;
+    display: inline-block;
+    padding-top: 7px;
+}
+
+.proizvodi img {
+    width: 210px;
+    height: 230px;
+    padding-top: 13px;
+}
+
+.proizvodi {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+
+.buket {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.buket p {
+    padding-top: 7px;
+    text-align: left;
+    font-size: 25px;
+}
+
+.buket a {
+    display: inline-block;
+    color: #5a7b6d;
+    font-size: 20px;
+    border-bottom: 1px solid #5a7b6d;
+}
+
+.proizvod-strana img {
+    width: 400px;
+    height: 500px;
+    border-radius: 3%;
+}
+
+.proizvod-tekst {
+    text-align: justify;
+    padding-left: 100px;
+}
+
+.proizvod-tekst p {
+    padding-top: 27px;
+    font-size: large;
+}
+
+.proizvod-strana {
+    display: flex;
+    padding: 100px;
+    color: #5a7b6d;
+}
+
+.proizvod-strana li {
+    list-style: none;
+    font-size: large;
+    padding: 5px;
+}
+
+.proizvod-tekst p:nth-of-type(2),
+.proizvod-tekst p:nth-of-type(3) {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.onama-pozadina {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    background-size: cover;
+    position: relative;
+}
+
+.onama-pozadina .tekst_slike {
+    top: 90px;
+}
+
+
+.first-box {
+    display: flex;
+    padding: 70px;
+    color: #5a7b6d;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 70px;
+}
+
+
+.buketi {
+    width: 3000px;
+    margin-left: 200px;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: buket;
+    animation-timing-function: linear;
+    transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes buket {
+    0% {
+        background-image: url('aranzman2.jpg');
+    }
+
+    20% {
+        background-image: url('aranzman3.jpg');
+    }
+
+    40% {
+        background-image: url('aranzman4.jpg');
+    }
+
+    60% {
+        background-image: url('aranzman5.jpg');
+    }
+
+    80% {
+        background-image: url('aranzman2.jpg');
+    }
+
+    100% {
+        background-image: url('aranzman1.jbg');
+    }
+}
+
+.slike img {
+    width: 450px;
+    height: 400px;
+    padding: 15px;
+}
+
+.slike {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    justify-content: center;
+}
+
+.slike img:hover {
+    background-color: #5a7b6d;
+}
+
+.contact-bg {
+    padding: 30px 40px;
+    border-radius: 3%;
+    margin: auto;
+    color: #5a7b6d;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-bg form {
+    width: 400px;
+    font-weight: 700;
+    font-size: 20px;
+    border: #6b9080;
+}
+
+input,
+textarea {
+    padding: 7px;
+    margin: 5px 0 15px 0;
+    border-style: solid;
+    border-width: 2px;
+    outline: none;
+    display: block;
+    margin: 10px;
+    resize: none;
+}
+
+input:focus, textarea:focus {
+  	border: 1px solid #6b9080;
+}
+
+.contact-bg h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+label {
+    margin: 10px;
+}
+
+legend {
+    background-color: #6b9080;
+    color: white;
+    padding: 5px 10px;
+    margin: 0 15px;
+}
+
+.contact-bg button {
+    margin: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #92b8a8
+}
+
+@media screen and (max-width: 1450px) {
+
+    .tekst_slike {
+        top: 70px;
+        left: 30px;
+    }
+
+    .ponude {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hover-biljke {
+        bottom: 30px;
+    }
+
+    .clanovi {
+        flex-wrap: wrap;
+    }
+
+    .clanovi img {
+        margin: 10px 15px;
+        width: 400px;
+        height: 500px;
+    }
+
+
+    .usluge {
+        height: 630px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .usluge img {
+        margin: 0;
+        margin-top: 30px;
+    }
+
+    .wrapper {
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media screen and (min-width: 350px) and (max-width: 900px){
+
+    
+    .proizvodi {
+        justify-content: center;
+    }
+
+
+    .kategorije {
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .proizvod-strana {
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .proizvod-tekst {
+        margin-top: 20px;
+        padding-left: 0;
+    }
+
+    .contact-bg {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-bg aside {
+        width: 340px;
+    }
+
+    .contact-bg form {
+        margin-bottom: 30px;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
