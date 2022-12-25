@@ -32,7 +32,7 @@ a {
 
 
 .naslovna {
-    background: url('naslovna.jpg');
+    background: url('slike/naslovna.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     height: 500px;
@@ -301,7 +301,7 @@ aside {
 }
 
 .onama-pozadina {
-    background-image: url('background.jpg');
+    background-image: url('slike/background.jpg');
     background-repeat: no-repeat;
     background-position: center;
     height: 400px;
@@ -338,27 +338,27 @@ aside {
 
 @keyframes buket {
     0% {
-        background-image: url('aranzman2.jpg');
+        background-image: url('slike/aranzman2.jpg');
     }
 
     20% {
-        background-image: url('aranzman3.jpg');
+        background-image: url('slike/aranzman3.jpg');
     }
 
     40% {
-        background-image: url('aranzman4.jpg');
+        background-image: url('slike/aranzman4.jpg');
     }
 
     60% {
-        background-image: url('aranzman5.jpg');
+        background-image: url('slike/aranzman5.jpg');
     }
 
     80% {
-        background-image: url('aranzman2.jpg');
+        background-image: url('slike/aranzman2.jpg');
     }
 
     100% {
-        background-image: url('aranzman1.jbg');
+        background-image: url('slike/aranzman1.jbg');
     }
 }
 
