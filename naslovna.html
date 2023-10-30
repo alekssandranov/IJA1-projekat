@@ -14,50 +14,50 @@
         <nav>
             <ul class="navbar">
                 <li><a href="#">Naslovna</a></li>
-                <li><a href="onama.html">O nama</a></li>
                 <li>
-                    <a href="shop.html">Shop</a>
+                    <a href="biljke.html">Shop</a>
                 </li>
                 <li><a href="galerija.html">Galerija</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
-    
+
         <div class="naslovna">
             <div class="tekst_slike">
                 <p class="naslov">Lorem ipsum</p>
                 <p class="podnaslov">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Id, aliquid?</p>
-                <button><a href="shop.html">Vise</a></button>
+                <button class="dugme"><a href="biljke.html">Vise</a></button>
             </div>
         </div>
-    
+
         <div class="info">
             <div class="ponude">
-                <div id="biljke">
+                <div onclick="biljke(1)" id="biljke">
                     <img class="biljke-img" src="slike/bilje.jpg" alt="">
-                    <a href="shop.html"><p class="hover-biljke">Biljke</p></a>
+                    <p class="hover-biljke">Biljke</p>
                 </div>
-                <div id="vencanja">
+                <div onclick="biljke(2)" id="vencanja">
                     <img src="slike/vencanje.jpg" alt="">
-                    <a href="shop.html"><p class="hover-vencanja">Vencanja</p></a>
+                    <p class="hover-vencanja">Vencanja</p>
                 </div>
-                <div id="godisnjice">
+                <div onclick="biljke(3)" id="godisnjice">
                     <img src="slike/flowerbox.jpg" alt="">
-                    <a href="shop.html"><p class="hover-godisnjice">Godisnjice</p></a>
+                    <p class="hover-godisnjice">Godisnjice</p>
                 </div>
             </div>
-    
+
             <div class="usluge">
                 <div class="text-usluge">
                     <h1>Nase usluge</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta nobis similique perferendis magni
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta nobis similique perferendis
+                        magni
                         possimus hic alias, provident id exercitationem, atque obcaecati illo repellendus tempore saepe,
                         voluptates maxime nam earum ipsum.
                     </p>
                 </div>
                 <img src="slike/vencanje.jpg" alt="">
             </div>
-    
+
             <div class="nas-tim">
                 <h1>Upoznajte nas tim</h1>
                 <div class="clanovi">
@@ -68,7 +68,7 @@
                 </div>
             </div>
         </div>
-    
+
         <footer>
             <div id="adresa">
                 <h2>Lorem ipsum</h2>
@@ -92,6 +92,8 @@
             </div>
         </footer>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

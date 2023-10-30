@@ -62,7 +62,7 @@ a {
     text-align: center;
 }
 
-button {
+.dugme {
     color: white;
     background-color: #6b9080;
     width: 120px;
@@ -86,8 +86,10 @@ button {
 
 #biljke,
 #vencanja,
-#godisnjice {
+#godisnjice,
+#buketi {
     position: relative;
+    cursor: pointer;
 }
 
 .biljke-img {
@@ -300,84 +302,23 @@ aside {
     padding-bottom: 5px;
 }
 
-.onama-pozadina {
-    background-image: url('slike/background.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 400px;
-    background-size: cover;
-    position: relative;
-}
-
-.onama-pozadina .tekst_slike {
-    top: 90px;
-}
-
-
-.first-box {
-    display: flex;
-    padding: 70px;
-    color: #5a7b6d;
-    font-size: 20px;
-    text-align: justify;
-    margin-left: 70px;
-}
-
-
-.buketi {
-    width: 3000px;
-    margin-left: 200px;
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
-    background-size: contain;
-    background-repeat: no-repeat;
-    animation-name: buket;
-    animation-timing-function: linear;
-    transition: opacity 0.5s ease-in-out;
-}
-
-@keyframes buket {
-    0% {
-        background-image: url('slike/aranzman2.jpg');
-    }
-
-    20% {
-        background-image: url('slike/aranzman3.jpg');
-    }
-
-    40% {
-        background-image: url('slike/aranzman4.jpg');
-    }
-
-    60% {
-        background-image: url('slike/aranzman5.jpg');
-    }
-
-    80% {
-        background-image: url('slike/aranzman2.jpg');
-    }
-
-    100% {
-        background-image: url('slike/aranzman1.jbg');
-    }
-}
-
-.slike img {
+#slike img {
     width: 450px;
     height: 400px;
     padding: 15px;
 }
 
-.slike {
+#slike {
     display: flex;
     flex-wrap: wrap;
     margin: 50px;
     justify-content: center;
 }
 
-.slike img:hover {
+#slike img:hover {
     background-color: #5a7b6d;
 }
+
 
 .contact-bg {
     padding: 30px 40px;
@@ -407,8 +348,9 @@ textarea {
     resize: none;
 }
 
-input:focus, textarea:focus {
-  	border: 1px solid #6b9080;
+input:focus,
+textarea:focus {
+    border: 1px solid #6b9080;
 }
 
 .contact-bg h2 {
@@ -481,9 +423,9 @@ button:hover {
 
 }
 
-@media screen and (min-width: 350px) and (max-width: 900px){
+@media screen and (min-width: 350px) and (max-width: 900px) {
 
-    
+
     .proizvodi {
         justify-content: center;
     }
@@ -495,8 +437,8 @@ button:hover {
     }
 
     .proizvod-strana {
-       flex-direction: column;
-       align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     .proizvod-tekst {
@@ -522,5 +464,5 @@ button:hover {
         flex-direction: column;
         align-items: center;
     }
-    
+
 }

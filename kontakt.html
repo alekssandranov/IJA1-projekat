@@ -13,8 +13,7 @@
     <nav>
         <ul>
             <li><a href="naslovna.html">Naslovna</a></li>
-            <li><a href="onama.html">O nama</a></li>
-            <li><a href="shop.html">Shop</a></li>
+            <li><a href="biljke.html">Shop</a></li>
             <li><a href="galerija.html">Galerija</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
@@ -44,25 +43,29 @@
             </div>
         </aside>
         
-        <form>
+        <form name="mojaForma" method="POST">
             <fieldset>
                 <legend>Kontaktirajte nas</legend>
                 <label for="ime">Ime: </label>
-                <input type="text" id="ime">
+                <input name="ime" type="text" id="ime">
                 <label for="prezime">Prezime: </label>
-                <input type="text" id="prezime">
+                <input name="prezime" type="text" id="prezime">
                 <label for="br">Telefon: </label>
-                <input type="text" id="br">
+                <input name="broj" type="text" id="br">
                 <label for="mail">Email: </label>
-                <input type="email" id="mail">
+                <input name="email" type="email" id="mail">
                 <label for="komentar">Poruka: </label>
-                <textarea name="" id="" cols="30" rows="10" maxlength="50"></textarea>
-                <button class="kontakt-dugme">Posalji</button>
+                <textarea name="poruka" id="" cols="30" rows="10" maxlength="50"></textarea>
+                <button onclick="forma()" class="dugme" name="submit">Posalji</button>
             </fieldset>
 
         </form>
+
+        <div id="ispis"></div>
     
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 

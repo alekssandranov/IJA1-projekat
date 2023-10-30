@@ -13,8 +13,7 @@
     <nav>
         <ul>
             <li><a href="naslovna.html">Naslovna</a></li>
-            <li><a href="onama.html">O nama</a></li>
-            <li><a href="shop.html">Shop</a></li>
+            <li><a href="biljke.html">Shop</a></li>
             <li><a href="galerija.html">Galerija</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
@@ -23,10 +22,9 @@
     <div class="shop-stranice">
         <div class="kategorije">
             <p>Kategorije:</p>
-            <p><a href="">Cvece</a></p>
-            <p><a href="">Buketi</a></p>
-            <p><a href="">Vencanja</a></p>
-            <p><a href="">Kucne biljke</a></p>
+            <p id="biljke" onclick="biljke(1)">Kucne biljke</p>
+            <p id="vencanja" onclick="biljke(2)">Vencanja</p>
+            <p id="buketi" onclick="biljke(3)">Buketi</p>
         </div>
         <div class="proizvodi">
             <div class="buket">
@@ -96,6 +94,8 @@
             <p>Nedelja: Neradna</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
