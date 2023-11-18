@@ -8,6 +8,12 @@ nav {
     font-size: large;
 }
 
+
+#menubtn {
+    display: none;
+}
+    
+
 nav li {
     list-style: none;
     padding-top: 15px;
@@ -63,14 +69,19 @@ a {
 }
 
 .dugme {
+    display: block;
     color: white;
     background-color: #6b9080;
     width: 120px;
-    height: 35px;
+    height: 20px;
     font-size: 20px;
     font-weight: 500;
     border: none;
+    text-align: center;
+    line-height: 23px;
+    padding: 10px;
 }
+
 
 .ponude {
     display: flex;
@@ -382,7 +393,7 @@ button:hover {
 
     .tekst_slike {
         top: 70px;
-        left: 30px;
+        left: 165px;
     }
 
     .ponude {
@@ -466,3 +477,42 @@ button:hover {
     }
 
 }
+#social-media {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0 10px 55px;
+    gap: 10px;
+}
+
+
+
+
+
+@media screen and (max-width: 320px) {
+    #menubtn {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    .tekst_slike {
+        top: 50px;
+        left: 15px;
+    }
+    .naslov {
+        padding-left: 15px;
+        text-align: justify;
+    }
+    .podnaslov {
+        padding-right: 7px;
+        text-align: justify;
+    }
+    #biljke, #vencanja, #godisnjice {
+        width: 100px;
+       right: 150px;
+    }
+    .biljke-img {
+        width: 50px;
+    }
+}
+

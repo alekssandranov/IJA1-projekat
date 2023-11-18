@@ -1,18 +1,18 @@
 function biljke(x) {
+    'use strict';
 
     if (x === 1) {
         window.location = "biljke.html";
-    }
-    else if (x === 2) {
+    } else if (x === 2) {
         window.location = "vencanja.html";
-    }
-    else if (x === 3) {
+    } else if (x === 3) {
         window.location = "buketi.html";
     }
     return x;
 }
 
 function galerija() {
+    'use strict';
     var nizSlika = [];
 
     nizSlika.push('slike/buket1.jpg', 'slike/buket2.jpg', 'slike/buket4.jpg',
@@ -58,5 +58,6 @@ function forma(e) {
     return;
 
 }
+
 
 
