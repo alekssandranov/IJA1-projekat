@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /slike
-Allow: /slike/vencanje.jpg
+Disallow: /slike/
 
 sitemap: https://github.com/alekssandranov/IJA1-projekat/blob/master/sitemap.xml
