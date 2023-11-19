@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /slike/
+Disallow:
 
 sitemap: https://github.com/alekssandranov/IJA1-projekat/blob/master/sitemap.xml
